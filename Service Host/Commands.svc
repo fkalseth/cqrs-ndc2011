@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Ndc2011.ServiceHost.Commands" CodeBehind="Commands.svc.cs" Factory="Ninject.Extensions.Wcf.NinjectServiceHostFactory" %>

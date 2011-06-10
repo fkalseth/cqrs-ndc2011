@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="ConferenceContext">
+    <EntitySetMapping Name="Agendas">
+      <EntityTypeMapping TypeName="Model.Conference">
+        <MappingFragment StoreEntitySet="Agendas">
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Attendees">
+      <EntityTypeMapping TypeName="Model.Attendee">
+        <MappingFragment StoreEntitySet="Attendees">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sessions">
+      <EntityTypeMapping TypeName="Model.Session">
+        <MappingFragment StoreEntitySet="Sessions">
+          <ScalarProperty Name="Agenda_Id" ColumnName="Agenda_Id" />
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="StartMinute" ColumnName="StartMinute" />
+          <ScalarProperty Name="Track" ColumnName="Track" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Day" ColumnName="Day" />
+          <ScalarProperty Name="DurationInMinutes" ColumnName="DurationInMinutes" />
+          <ScalarProperty Name="StartHour" ColumnName="StartHour" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Speakers">
+      <EntityTypeMapping TypeName="Model.Speaker">
+        <MappingFragment StoreEntitySet="Speakers">
+          <ScalarProperty Name="Agenda_Id" ColumnName="Agenda_Id" />
+          <ScalarProperty Name="PhotoUrl" ColumnName="PhotoUrl" />
+          <ScalarProperty Name="Bio" ColumnName="Bio" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="ConferenceAttendees" TypeName="Model.ConferenceAttendees" StoreEntitySet="ConferenceAttendees">
+      <EndProperty Name="Attendee">
+        <ScalarProperty Name="Id" ColumnName="Attendees_Id" />
+      </EndProperty>
+      <EndProperty Name="Agenda">
+        <ScalarProperty Name="Id" ColumnName="Agendas_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="SessionAttendees" TypeName="Model.SessionAttendees" StoreEntitySet="SessionAttendees">
+      <EndProperty Name="Session">
+        <ScalarProperty Name="Id" ColumnName="Sessions_Id" />
+      </EndProperty>
+      <EndProperty Name="Attendee">
+        <ScalarProperty Name="Id" ColumnName="Attendees_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="SessionSpeaker" TypeName="Model.SessionSpeaker" StoreEntitySet="SessionSpeaker">
+      <EndProperty Name="Speaker">
+        <ScalarProperty Name="Id" ColumnName="Speakers_Id" />
+      </EndProperty>
+      <EndProperty Name="Session">
+        <ScalarProperty Name="Id" ColumnName="Sessions_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

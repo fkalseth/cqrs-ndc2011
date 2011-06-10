@@ -1,0 +1,1 @@
+E:\Dropbox\Dropbox\Source\ndc2011\Cqrs Demo\Silverlight Client Host\Silverlight Client Host.csproj,634429825640782532,Properties\AssemblyInfo.cs,

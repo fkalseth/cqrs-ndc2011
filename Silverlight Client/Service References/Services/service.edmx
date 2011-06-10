@@ -1,0 +1,121 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="1.0">
+    <Schema Namespace="Model" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityType Name="Conference">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="StartDate" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="EndDate" Type="Edm.String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <NavigationProperty Name="Sessions" Relationship="Model.FK_AgendaSession" FromRole="Agenda" ToRole="Session" />
+        <NavigationProperty Name="Speakers" Relationship="Model.FK_AgendaSpeaker" FromRole="Agenda" ToRole="Speaker" />
+        <NavigationProperty Name="Attendees" Relationship="Model.ConferenceAttendees" FromRole="Agenda" ToRole="Attendee" />
+      </EntityType>
+      <EntityType Name="Attendee">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <NavigationProperty Name="Agendas" Relationship="Model.ConferenceAttendees" FromRole="Attendee" ToRole="Agenda" />
+        <NavigationProperty Name="Sessions" Relationship="Model.SessionAttendees" FromRole="Attendee" ToRole="Session" />
+      </EntityType>
+      <EntityType Name="Session">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="Title" Type="Edm.String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="StartHour" Type="Edm.Int32" Nullable="false" />
+        <Property Name="DurationInMinutes" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Day" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Description" Type="Edm.String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Track" Type="Edm.Int32" Nullable="false" />
+        <Property Name="StartMinute" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Capacity" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Agenda_Id" Type="Edm.Int32" Nullable="false" />
+        <NavigationProperty Name="Agenda" Relationship="Model.FK_AgendaSession" FromRole="Session" ToRole="Agenda" />
+        <NavigationProperty Name="Attendees" Relationship="Model.SessionAttendees" FromRole="Session" ToRole="Attendee" />
+        <NavigationProperty Name="Speakers" Relationship="Model.SessionSpeaker" FromRole="Session" ToRole="Speaker" />
+      </EntityType>
+      <EntityType Name="Speaker">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="Name" Type="Edm.String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Bio" Type="Edm.String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="PhotoUrl" Type="Edm.String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        <Property Name="Agenda_Id" Type="Edm.Int32" Nullable="false" />
+        <NavigationProperty Name="Agenda" Relationship="Model.FK_AgendaSpeaker" FromRole="Speaker" ToRole="Agenda" />
+        <NavigationProperty Name="Sessions" Relationship="Model.SessionSpeaker" FromRole="Speaker" ToRole="Session" />
+      </EntityType>
+      <Association Name="FK_AgendaSession">
+        <End Role="Agenda" Type="Model.Conference" Multiplicity="1" />
+        <End Role="Session" Type="Model.Session" Multiplicity="*" />
+        <ReferentialConstraint>
+          <Principal Role="Agenda">
+            <PropertyRef Name="Id" />
+          </Principal>
+          <Dependent Role="Session">
+            <PropertyRef Name="Agenda_Id" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="FK_AgendaSpeaker">
+        <End Role="Agenda" Type="Model.Conference" Multiplicity="1" />
+        <End Role="Speaker" Type="Model.Speaker" Multiplicity="*" />
+        <ReferentialConstraint>
+          <Principal Role="Agenda">
+            <PropertyRef Name="Id" />
+          </Principal>
+          <Dependent Role="Speaker">
+            <PropertyRef Name="Agenda_Id" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="ConferenceAttendees">
+        <End Role="Agenda" Type="Model.Conference" Multiplicity="*" />
+        <End Role="Attendee" Type="Model.Attendee" Multiplicity="*" />
+      </Association>
+      <Association Name="SessionAttendees">
+        <End Role="Attendee" Type="Model.Attendee" Multiplicity="*" />
+        <End Role="Session" Type="Model.Session" Multiplicity="*" />
+      </Association>
+      <Association Name="SessionSpeaker">
+        <End Role="Session" Type="Model.Session" Multiplicity="*" />
+        <End Role="Speaker" Type="Model.Speaker" Multiplicity="*" />
+      </Association>
+    </Schema>
+    <Schema Namespace="Domain" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityContainer Name="ConferenceContext" p7:LazyLoadingEnabled="true" m:IsDefaultEntityContainer="true" xmlns:p7="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntitySet Name="Agendas" EntityType="Model.Conference" />
+        <EntitySet Name="Attendees" EntityType="Model.Attendee" />
+        <EntitySet Name="Sessions" EntityType="Model.Session" />
+        <EntitySet Name="Speakers" EntityType="Model.Speaker" />
+        <AssociationSet Name="FK_AgendaSession" Association="Model.FK_AgendaSession">
+          <End Role="Agenda" EntitySet="Agendas" />
+          <End Role="Session" EntitySet="Sessions" />
+        </AssociationSet>
+        <AssociationSet Name="FK_AgendaSpeaker" Association="Model.FK_AgendaSpeaker">
+          <End Role="Agenda" EntitySet="Agendas" />
+          <End Role="Speaker" EntitySet="Speakers" />
+        </AssociationSet>
+        <AssociationSet Name="ConferenceAttendees" Association="Model.ConferenceAttendees">
+          <End Role="Agenda" EntitySet="Agendas" />
+          <End Role="Attendee" EntitySet="Attendees" />
+        </AssociationSet>
+        <AssociationSet Name="SessionAttendees" Association="Model.SessionAttendees">
+          <End Role="Attendee" EntitySet="Attendees" />
+          <End Role="Session" EntitySet="Sessions" />
+        </AssociationSet>
+        <AssociationSet Name="SessionSpeaker" Association="Model.SessionSpeaker">
+          <End Role="Session" EntitySet="Sessions" />
+          <End Role="Speaker" EntitySet="Speakers" />
+        </AssociationSet>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="DD295FDA-84BD-4A62-94D5-29C552159356" ModuleId="Service Host" />
+  <Module PersistentId="A4F086ED-A22A-4C09-A81B-6EEBC130BAB0" ModuleId="Infrastructure" />
+  <Module PersistentId="F0E17074-2E34-4B48-B740-29D1FED69148" ModuleId="Domain" />
+</Modules>

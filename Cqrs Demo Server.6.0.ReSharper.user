@@ -1,0 +1,51 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="F0E17074-2E34-4B48-B740-29D1FED69148/f:Model1.Designer.cs" caret="2177" fromTop="20" />
+      <File id="A4F086ED-A22A-4C09-A81B-6EEBC130BAB0/f:IRepository.cs" caret="413" fromTop="12" />
+      <File id="DD295FDA-84BD-4A62-94D5-29C552159356/d:Infrastructure/f:CommitChangesInterceptor.cs" caret="133" fromTop="5" />
+      <File id="DD295FDA-84BD-4A62-94D5-29C552159356/f:Global.asax.cs" caret="308" fromTop="8" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="DD295FDA-84BD-4A62-94D5-29C552159356/f:Global.asax.cs" caret="797" fromTop="22" />
+      <File id="DD295FDA-84BD-4A62-94D5-29C552159356/d:Infrastructure/f:CommitChangesInterceptor.cs" caret="374" fromTop="11" />
+    </RecentEdits>
+  </RecentFiles>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:Ninject.StandardKernel">
+      <Item value="Bind`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="typeof" priority="61" />
+      <Item value="Repository" priority="30" />
+      <Item value="kernel" priority="30" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ninject.Syntax.IBindingToSyntax`1">
+      <Item value="To`0" priority="51" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ninject.Syntax.IBindingWhenInNamedWithOrOnSyntax`1">
+      <Item value="InRequestScope`0" priority="51" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectContext">
+      <Item value="SaveChanges`0" priority="25" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+</Configuration>

@@ -1,0 +1,5 @@
+E:\Dropbox\Dropbox\Source\ndc2011\Cqrs Demo\Silverlight Client Host\bin\Silverlight Client Host.dll
+E:\Dropbox\Dropbox\Source\ndc2011\Cqrs Demo\Silverlight Client Host\bin\Silverlight Client Host.pdb
+E:\Dropbox\Dropbox\Source\ndc2011\Cqrs Demo\Silverlight Client Host\obj\Debug\ResolveAssemblyReference.cache
+E:\Dropbox\Dropbox\Source\ndc2011\Cqrs Demo\Silverlight Client Host\obj\Debug\Silverlight Client Host.dll
+E:\Dropbox\Dropbox\Source\ndc2011\Cqrs Demo\Silverlight Client Host\obj\Debug\Silverlight Client Host.pdb

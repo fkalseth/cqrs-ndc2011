@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="Agendas" EntityType="Model.Store.Agendas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Attendees" EntityType="Model.Store.Attendees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ConferenceAttendees" EntityType="Model.Store.ConferenceAttendees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SessionAttendees" EntityType="Model.Store.SessionAttendees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sessions" EntityType="Model.Store.Sessions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SessionSpeaker" EntityType="Model.Store.SessionSpeaker" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Speakers" EntityType="Model.Store.Speakers" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_AgendaSession" Association="Model.Store.FK_AgendaSession">
+      <End Role="Agendas" EntitySet="Agendas" />
+      <End Role="Sessions" EntitySet="Sessions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AgendaSpeaker" Association="Model.Store.FK_AgendaSpeaker">
+      <End Role="Agendas" EntitySet="Agendas" />
+      <End Role="Speakers" EntitySet="Speakers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConferenceAttendees_Agenda" Association="Model.Store.FK_ConferenceAttendees_Agenda">
+      <End Role="Agendas" EntitySet="Agendas" />
+      <End Role="ConferenceAttendees" EntitySet="ConferenceAttendees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConferenceAttendees_Attendee" Association="Model.Store.FK_ConferenceAttendees_Attendee">
+      <End Role="Attendees" EntitySet="Attendees" />
+      <End Role="ConferenceAttendees" EntitySet="ConferenceAttendees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SessionAttendees_Attendee" Association="Model.Store.FK_SessionAttendees_Attendee">
+      <End Role="Attendees" EntitySet="Attendees" />
+      <End Role="SessionAttendees" EntitySet="SessionAttendees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SessionAttendees_Session" Association="Model.Store.FK_SessionAttendees_Session">
+      <End Role="Sessions" EntitySet="Sessions" />
+      <End Role="SessionAttendees" EntitySet="SessionAttendees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SessionSpeaker_Session" Association="Model.Store.FK_SessionSpeaker_Session">
+      <End Role="Sessions" EntitySet="Sessions" />
+      <End Role="SessionSpeaker" EntitySet="SessionSpeaker" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SessionSpeaker_Speaker" Association="Model.Store.FK_SessionSpeaker_Speaker">
+      <End Role="Speakers" EntitySet="Speakers" />
+      <End Role="SessionSpeaker" EntitySet="SessionSpeaker" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Agendas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Attendees">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ConferenceAttendees">
+    <Key>
+      <PropertyRef Name="Agendas_Id" />
+      <PropertyRef Name="Attendees_Id" />
+    </Key>
+    <Property Name="Agendas_Id" Type="int" Nullable="false" />
+    <Property Name="Attendees_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SessionAttendees">
+    <Key>
+      <PropertyRef Name="Attendees_Id" />
+      <PropertyRef Name="Sessions_Id" />
+    </Key>
+    <Property Name="Attendees_Id" Type="int" Nullable="false" />
+    <Property Name="Sessions_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sessions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="StartHour" Type="int" Nullable="false" />
+    <Property Name="DurationInMinutes" Type="int" Nullable="false" />
+    <Property Name="Day" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Track" Type="int" Nullable="false" />
+    <Property Name="StartMinute" Type="int" Nullable="false" />
+    <Property Name="Capacity" Type="int" Nullable="false" />
+    <Property Name="Agenda_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SessionSpeaker">
+    <Key>
+      <PropertyRef Name="Sessions_Id" />
+      <PropertyRef Name="Speakers_Id" />
+    </Key>
+    <Property Name="Sessions_Id" Type="int" Nullable="false" />
+    <Property Name="Speakers_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Speakers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Bio" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PhotoUrl" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Agenda_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AgendaSession">
+    <End Role="Agendas" Type="Model.Store.Agendas" Multiplicity="1" />
+    <End Role="Sessions" Type="Model.Store.Sessions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agendas">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sessions">
+        <PropertyRef Name="Agenda_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AgendaSpeaker">
+    <End Role="Agendas" Type="Model.Store.Agendas" Multiplicity="1" />
+    <End Role="Speakers" Type="Model.Store.Speakers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agendas">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Speakers">
+        <PropertyRef Name="Agenda_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConferenceAttendees_Agenda">
+    <End Role="Agendas" Type="Model.Store.Agendas" Multiplicity="1" />
+    <End Role="ConferenceAttendees" Type="Model.Store.ConferenceAttendees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agendas">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ConferenceAttendees">
+        <PropertyRef Name="Agendas_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConferenceAttendees_Attendee">
+    <End Role="Attendees" Type="Model.Store.Attendees" Multiplicity="1" />
+    <End Role="ConferenceAttendees" Type="Model.Store.ConferenceAttendees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attendees">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ConferenceAttendees">
+        <PropertyRef Name="Attendees_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SessionAttendees_Attendee">
+    <End Role="Attendees" Type="Model.Store.Attendees" Multiplicity="1" />
+    <End Role="SessionAttendees" Type="Model.Store.SessionAttendees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Attendees">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SessionAttendees">
+        <PropertyRef Name="Attendees_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SessionAttendees_Session">
+    <End Role="Sessions" Type="Model.Store.Sessions" Multiplicity="1" />
+    <End Role="SessionAttendees" Type="Model.Store.SessionAttendees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sessions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SessionAttendees">
+        <PropertyRef Name="Sessions_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SessionSpeaker_Session">
+    <End Role="Sessions" Type="Model.Store.Sessions" Multiplicity="1" />
+    <End Role="SessionSpeaker" Type="Model.Store.SessionSpeaker" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sessions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SessionSpeaker">
+        <PropertyRef Name="Sessions_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SessionSpeaker_Speaker">
+    <End Role="Speakers" Type="Model.Store.Speakers" Multiplicity="1" />
+    <End Role="SessionSpeaker" Type="Model.Store.SessionSpeaker" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Speakers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SessionSpeaker">
+        <PropertyRef Name="Speakers_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

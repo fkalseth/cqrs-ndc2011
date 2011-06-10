@@ -1,0 +1,273 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="DD295FDA-84BD-4A62-94D5-29C552159356/f:IAcceptCommands.cs" caret="218" fromTop="10" />
+      <File id="DD295FDA-84BD-4A62-94D5-29C552159356/d:Infrastructure/f:CommitChangesInterceptor.cs" caret="0" fromTop="0" />
+      <File id="DD295FDA-84BD-4A62-94D5-29C552159356/d:Infrastructure/f:ExceptionToCommandResultInterceptor.cs" caret="0" fromTop="0" />
+      <File id="DD295FDA-84BD-4A62-94D5-29C552159356/d:Infrastructure/f:CommandTransactionInterceptor.cs" caret="331" fromTop="11" />
+      <File id="DD295FDA-84BD-4A62-94D5-29C552159356/d:Infrastructure/f:CommandExecutor.cs" caret="484" fromTop="16" />
+      <File id="DD295FDA-84BD-4A62-94D5-29C552159356/f:Commands.svc.cs" caret="362" fromTop="10" />
+      <File id="DD295FDA-84BD-4A62-94D5-29C552159356/f:Web.config" caret="657" fromTop="11" />
+      <File id="F0E17074-2E34-4B48-B740-29D1FED69148/f:Model1.Designer.cs" caret="40038" fromTop="14" />
+      <File id="F0E17074-2E34-4B48-B740-29D1FED69148/f:App.Config" caret="448" fromTop="3" />
+      <File id="F0E17074-2E34-4B48-B740-29D1FED69148/f:RegisterForSessionCommandHandler.cs" caret="597" fromTop="11" />
+      <File id="F0E17074-2E34-4B48-B740-29D1FED69148/f:Commands.cs" caret="0" fromTop="0" />
+      <File id="DD295FDA-84BD-4A62-94D5-29C552159356/f:Global.asax.cs" caret="1719" fromTop="41" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/f:AppBootstrapper.cs" caret="754" fromTop="23" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/f:ShellViewModel.cs" caret="331" fromTop="10" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Queries/f:GetAllUpcomingSessionsQuery.cs" caret="107" fromTop="4" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Queries/f:DataContextQuery.cs" caret="1571" fromTop="16" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Queries/f:Session.cs" caret="266" fromTop="10" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:ImageUrlConverter.cs" caret="401" fromTop="11" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsViewModel.cs" caret="171" fromTop="7" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Service References/d:Services/f:Reference.cs" caret="36663" fromTop="13" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/f:ISendCommands.cs" caret="0" fromTop="0" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/f:ViewModelHelpers.cs" caret="127" fromTop="6" />
+      <File id="A4F086ED-A22A-4C09-A81B-6EEBC130BAB0/f:CommandResult.cs" caret="273" fromTop="10" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsView.xaml" caret="1024" fromTop="16" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsViewModel.cs" caret="1170" fromTop="24" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/f:ViewModelHelpers.cs" caret="372" fromTop="16" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/f:ViewModelHelpers.cs" caret="235" fromTop="7" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Queries/f:Session.cs" caret="816" fromTop="10" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Queries/f:GetAllUpcomingSessionsQuery.cs" caret="725" fromTop="22" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Queries/f:Session.cs" caret="450" fromTop="13" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Queries/f:Session.cs" caret="266" fromTop="10" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsViewModel.cs" caret="1114" fromTop="9" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsViewModel.cs" caret="915" fromTop="4" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsViewModel.cs" caret="1480" fromTop="19" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsViewModel.cs" caret="805" fromTop="21" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsViewModel.cs" caret="0" fromTop="0" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Service References/d:Services/f:Reference.cs" caret="19985" fromTop="40" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Queries/f:GetAllUpcomingSessionsQuery.cs" caret="184" fromTop="8" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Queries/f:GetAllUpcomingSessionsQuery.cs" caret="69" fromTop="2" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Queries/f:GetAllUpcomingSessionsQuery.cs" caret="593" fromTop="16" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsView.xaml" caret="1131" fromTop="12" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsView.xaml" caret="1131" fromTop="32" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsViewModel.cs" caret="171" fromTop="11" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsViewModel.cs" caret="171" fromTop="16" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsViewModel.cs" caret="349" fromTop="12" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsViewModel.cs" caret="171" fromTop="7" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Queries/f:Session.cs" caret="1038" fromTop="36" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:ImageUrlConverter.cs" caret="398" fromTop="11" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsView.xaml" caret="1626" fromTop="16" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsView.xaml" caret="751" fromTop="9" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsView.xaml" caret="930" fromTop="14" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsView.xaml" caret="2929" fromTop="33" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsView.xaml" caret="1266" fromTop="11" />
+      <File id="60760570-CE18-4158-B7A8-E17E4DA4EFB3/d:Views/f:SessionsView.xaml" caret="1662" fromTop="15" />
+    </RecentEdits>
+  </RecentFiles>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="public" priority="455" />
+      <Item value="bool" priority="92" />
+      <Item value="GetHashCode`0" priority="30" />
+      <Item value="ServerTooBusyException`0" priority="30" />
+      <Item value="enum" priority="29" />
+      <Item value="class" priority="149" />
+      <Item value="IAcceptCommands`0" priority="60" />
+      <Item value="return" priority="247" />
+      <Item value="new" priority="371" />
+      <Item value="CommandResult" priority="83" />
+      <Item value="Status" priority="61" />
+      <Item value="CommandStatus`0" priority="125" />
+      <Item value="interface" priority="89" />
+      <Item value="CommandResult`0" priority="123" />
+      <Item value="Command`0" priority="123" />
+      <Item value="object" priority="30" />
+      <Item value="ICommandExecutor`0" priority="30" />
+      <Item value="var" priority="185" />
+      <Item value="dynamic" priority="30" />
+      <Item value="command" priority="123" />
+      <Item value="TCommand`0" priority="30" />
+      <Item value="IHandle" priority="30" />
+      <Item value="handler" priority="61" />
+      <Item value="result" priority="154" />
+      <Item value="invocation" priority="185" />
+      <Item value="using" priority="60" />
+      <Item value="as" priority="61" />
+      <Item value="if" priority="92" />
+      <Item value="scope" priority="30" />
+      <Item value="Ninject" priority="91" />
+      <Item value="Extensions" priority="51" />
+      <Item value="Wcf" priority="25" />
+      <Item value="NinjectWcfApplication`0" priority="25" />
+      <Item value="kernel" priority="61" />
+      <Item value="CommandExecutor`0" priority="30" />
+      <Item value="TransactionInterceptor`0" priority="60" />
+      <Item value="Interception" priority="25" />
+      <Item value="Activation" priority="25" />
+      <Item value="Registry" priority="25" />
+      <Item value="_executor" priority="30" />
+      <Item value="IInterceptor`0" priority="61" />
+      <Item value="try" priority="30" />
+      <Item value="catch" priority="30" />
+      <Item value="Exception`0" priority="30" />
+      <Item value="Message" priority="31" />
+      <Item value="ex" priority="93" />
+      <Item value="commandExecutorBinding" priority="61" />
+      <Item value="ExceptionToCommandResultInterceptor`0" priority="30" />
+      <Item value="string" priority="155" />
+      <Item value="App`0" priority="30" />
+      <Item value="ChannelFactory`0" priority="28" />
+      <Item value="EndpointAddress" priority="27" />
+      <Item value="factory" priority="30" />
+      <Item value="channel" priority="61" />
+      <Item value="null" priority="92" />
+      <Item value="ar" priority="30" />
+      <Item value="resultCallback" priority="61" />
+      <Item value="commandResult" priority="61" />
+      <Item value="void" priority="92" />
+      <Item value="Action`0" priority="30" />
+      <Item value="ISendCommands`0" priority="122" />
+      <Item value="CommandSender`0" priority="29" />
+      <Item value="_commands" priority="30" />
+      <Item value="RegisterForSessionCommand" priority="27" />
+      <Item value="AttendeeId" priority="30" />
+      <Item value="ConferenceId" priority="63" />
+      <Item value="session" priority="95" />
+      <Item value="SessionId" priority="31" />
+      <Item value="Id" priority="31" />
+      <Item value="model" priority="94" />
+      <Item value="else" priority="61" />
+      <Item value="MessageBox`0" priority="30" />
+      <Item value="Speakers" priority="92" />
+      <Item value="private" priority="30" />
+      <Item value="partial" priority="61" />
+      <Item value="OnPropertyChanged`0" priority="61" />
+      <Item value="Session`0" priority="61" />
+      <Item value="where" priority="30" />
+      <Item value="s" priority="123" />
+      <Item value="DateTime`0" priority="30" />
+      <Item value="orderby" priority="30" />
+      <Item value="BooleanToVisibilityConverter`0" priority="61" />
+      <Item value="value" priority="30" />
+      <Item value="String`0" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Service_Host.CommandStatus">
+      <Item value="Invalid" priority="26" />
+      <Item value="Executed" priority="25" />
+      <Item value="Failed" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ninject.Extensions.Interception.IInvocation">
+      <Item value="Proceed`0" priority="77" />
+      <Item value="ReturnValue" priority="51" />
+      <Item value="Request" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Service_Host.CommandResult">
+      <Item value="Status" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Transactions.TransactionScope">
+      <Item value="Complete`0" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ninject.StandardKernel">
+      <Item value="Bind`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ninject.Syntax.IBindingToSyntax`1">
+      <Item value="To`0" priority="51" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ninject.Syntax.IBindingWhenInNamedWithOrOnSyntax`1">
+      <Item value="InRequestScope`0" priority="25" />
+      <Item value="InTransientScope`0" priority="103" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ninject.Extensions.Interception.Advice.Syntax.IAdviceTargetSyntax">
+      <Item value="With`1" priority="103" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ninject.Extensions.Interception.Advice.Syntax.IAdviceOrderSyntax">
+      <Item value="InOrder`0" priority="103" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Service_Host.Infrastructure.IExecuteCommands">
+      <Item value="Execute`0" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ninject.Extensions.Interception.Request.IProxyRequest">
+      <Item value="Kernel" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.ChannelFactory`1">
+      <Item value="CreateChannel`0" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ndc2011.ServiceHost.IAcceptCommands">
+      <Item value="BeginExecute`0" priority="25" />
+      <Item value="EndExecute`0" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ninject.IKernel">
+      <Item value="Bind`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Silverlight_Client.ISendCommands">
+      <Item value="SendCommand`0" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Silverlight_Client.Services.Session">
+      <Item value="Id" priority="26" />
+      <Item value="Agenda_Id" priority="26" />
+      <Item value="Agenda" priority="25" />
+      <Item value="Day" priority="51" />
+      <Item value="StartHour" priority="51" />
+      <Item value="Track" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ndc2011.ServiceHost.CommandResult">
+      <Item value="Status" priority="25" />
+      <Item value="IsExecuted" priority="25" />
+      <Item value="Message" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Ndc2011.ServiceHost.CommandStatus">
+      <Item value="Executed" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.MessageBox">
+      <Item value="Show`0" priority="51" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Deployment">
+      <Item value="Current" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Deployment">
+      <Item value="Dispatcher" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Threading.Dispatcher">
+      <Item value="BeginInvoke`0" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Silverlight_Client.Services.Speaker">
+      <Item value="Name" priority="25" />
+      <Item value="PhotoUrl" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Join`0" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Services.Client.DataServiceCollection`1">
+      <Item value="CollectionChanged" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Silverlight_Client.Services.Conference">
+      <Item value="StartDate" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="AddDays`0" priority="25" />
+      <Item value="AddHours`0" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="25" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="25" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+</Configuration>

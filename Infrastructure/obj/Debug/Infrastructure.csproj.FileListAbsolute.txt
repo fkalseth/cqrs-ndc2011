@@ -1,0 +1,5 @@
+E:\Dropbox\Dropbox\Source\ndc2011\Cqrs Demo\Infrastructure\bin\Debug\Infrastructure.dll
+E:\Dropbox\Dropbox\Source\ndc2011\Cqrs Demo\Infrastructure\bin\Debug\Infrastructure.pdb
+E:\Dropbox\Dropbox\Source\ndc2011\Cqrs Demo\Infrastructure\obj\Debug\ResolveAssemblyReference.cache
+E:\Dropbox\Dropbox\Source\ndc2011\Cqrs Demo\Infrastructure\obj\Debug\Infrastructure.dll
+E:\Dropbox\Dropbox\Source\ndc2011\Cqrs Demo\Infrastructure\obj\Debug\Infrastructure.pdb
