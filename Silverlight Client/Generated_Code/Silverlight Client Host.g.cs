@@ -18,8 +18,8 @@ namespace Silverlight_Client
     using System.ServiceModel.DomainServices;
     using System.ServiceModel.DomainServices.Client;
     using System.ServiceModel.DomainServices.Client.ApplicationServices;
-    
-    
+
+
     /// <summary>
     /// Context for the RIA application.
     /// </summary>
@@ -29,7 +29,7 @@ namespace Silverlight_Client
     /// </remarks>
     public sealed partial class WebContext : WebContextBase
     {
-        
+
         #region Extensibility Method Definitions
 
         /// <summary>
@@ -39,8 +39,8 @@ namespace Silverlight_Client
         partial void OnCreated();
 
         #endregion
-        
-        
+
+
         /// <summary>
         /// Initializes a new instance of the WebContext class.
         /// </summary>
@@ -48,7 +48,7 @@ namespace Silverlight_Client
         {
             this.OnCreated();
         }
-        
+
         /// <summary>
         /// Gets the context that is registered as a lifetime object with the current application.
         /// </summary>

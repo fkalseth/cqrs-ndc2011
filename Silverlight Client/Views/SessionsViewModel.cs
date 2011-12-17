@@ -34,8 +34,8 @@ namespace Silverlight_Client.Views
         {
             _commands.SendCommand(new RegisterForSessionCommand
             {
-                AttendeeId = CurrentAttendeeId, 
-                ConferenceId = session.Agenda_Id, 
+                AttendeeId = CurrentAttendeeId,
+                ConferenceId = session.Agenda_Id,
                 SessionId = session.Id
             }, result =>
             {

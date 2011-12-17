@@ -35,13 +35,13 @@
                                     </HyperlinkButton>
                                     <TextBlock>By <Run Text="{Binding SpeakerNames}" /></TextBlock>
                                     <TextBlock>
-                                    <Run Text="{Binding StartHour}" />:<Run Text="{Binding StartMinute}" /> - 
+                                    <Run Text="{Binding StartHour}" />:<Run Text="{Binding StartMinute}" /> -
                                     <Run Text="{Binding EndHour}" />:<Run Text="{Binding EndMinute}" />
                                     on track <Run Text="{Binding Track}" />
                                     </TextBlock>
 
                                 </StackPanel>
-                            </Grid>                            
+                            </Grid>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>

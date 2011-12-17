@@ -29,14 +29,14 @@ using System.Runtime.Serialization;
 namespace Domain
 {
     #region Contexts
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
     public partial class ConferenceContext : ObjectContext
     {
         #region Constructors
-    
+
         /// <summary>
         /// Initializes a new ConferenceContext object using the connection string found in the 'ConferenceContext' section of the application configuration file.
         /// </summary>
@@ -45,7 +45,7 @@ namespace Domain
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new ConferenceContext object.
         /// </summary>
@@ -54,7 +54,7 @@ namespace Domain
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new ConferenceContext object.
         /// </summary>
@@ -63,17 +63,17 @@ namespace Domain
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         #endregion
-    
+
         #region Partial Methods
-    
+
         partial void OnContextCreated();
-    
+
         #endregion
-    
+
         #region ObjectSet Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -89,7 +89,7 @@ namespace Domain
             }
         }
         private ObjectSet<Conference> _Agendas;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -105,7 +105,7 @@ namespace Domain
             }
         }
         private ObjectSet<Attendee> _Attendees;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -121,7 +121,7 @@ namespace Domain
             }
         }
         private ObjectSet<Session> _Sessions;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -140,7 +140,7 @@ namespace Domain
 
         #endregion
         #region AddTo Methods
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Agendas EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -148,7 +148,7 @@ namespace Domain
         {
             base.AddObject("Agendas", conference);
         }
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Attendees EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -156,7 +156,7 @@ namespace Domain
         {
             base.AddObject("Attendees", attendee);
         }
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Sessions EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -164,7 +164,7 @@ namespace Domain
         {
             base.AddObject("Sessions", session);
         }
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Speakers EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -175,12 +175,12 @@ namespace Domain
 
         #endregion
     }
-    
+
 
     #endregion
-    
+
     #region Entities
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -190,7 +190,7 @@ namespace Domain
     public partial class Attendee : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new Attendee object.
         /// </summary>
@@ -206,7 +206,7 @@ namespace Domain
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -233,7 +233,7 @@ namespace Domain
         private global::System.Int32 _Id;
         partial void OnIdChanging(global::System.Int32 value);
         partial void OnIdChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -259,9 +259,9 @@ namespace Domain
         partial void OnNameChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -283,7 +283,7 @@ namespace Domain
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -308,7 +308,7 @@ namespace Domain
 
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -318,7 +318,7 @@ namespace Domain
     public partial class Conference : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new Conference object.
         /// </summary>
@@ -338,7 +338,7 @@ namespace Domain
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -365,7 +365,7 @@ namespace Domain
         private global::System.Int32 _Id;
         partial void OnIdChanging(global::System.Int32 value);
         partial void OnIdChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -389,7 +389,7 @@ namespace Domain
         private global::System.String _Name;
         partial void OnNameChanging(global::System.String value);
         partial void OnNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -413,7 +413,7 @@ namespace Domain
         private global::System.DateTime _StartDate;
         partial void OnStartDateChanging(global::System.DateTime value);
         partial void OnStartDateChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -439,9 +439,9 @@ namespace Domain
         partial void OnEndDateChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -463,7 +463,7 @@ namespace Domain
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -485,7 +485,7 @@ namespace Domain
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -510,7 +510,7 @@ namespace Domain
 
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -520,7 +520,7 @@ namespace Domain
     public partial class Session : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new Session object.
         /// </summary>
@@ -552,7 +552,7 @@ namespace Domain
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -579,7 +579,7 @@ namespace Domain
         private global::System.Int32 _Id;
         partial void OnIdChanging(global::System.Int32 value);
         partial void OnIdChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -603,7 +603,7 @@ namespace Domain
         private global::System.String _Title;
         partial void OnTitleChanging(global::System.String value);
         partial void OnTitleChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -627,7 +627,7 @@ namespace Domain
         private global::System.Int32 _StartHour;
         partial void OnStartHourChanging(global::System.Int32 value);
         partial void OnStartHourChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -651,7 +651,7 @@ namespace Domain
         private global::System.Int32 _DurationInMinutes;
         partial void OnDurationInMinutesChanging(global::System.Int32 value);
         partial void OnDurationInMinutesChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -675,7 +675,7 @@ namespace Domain
         private global::System.Int32 _Day;
         partial void OnDayChanging(global::System.Int32 value);
         partial void OnDayChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -699,7 +699,7 @@ namespace Domain
         private global::System.String _Description;
         partial void OnDescriptionChanging(global::System.String value);
         partial void OnDescriptionChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -723,7 +723,7 @@ namespace Domain
         private global::System.Int32 _Track;
         partial void OnTrackChanging(global::System.Int32 value);
         partial void OnTrackChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -747,7 +747,7 @@ namespace Domain
         private global::System.Int32 _StartMinute;
         partial void OnStartMinuteChanging(global::System.Int32 value);
         partial void OnStartMinuteChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -771,7 +771,7 @@ namespace Domain
         private global::System.Int32 _Capacity;
         partial void OnCapacityChanging(global::System.Int32 value);
         partial void OnCapacityChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -797,9 +797,9 @@ namespace Domain
         partial void OnAgenda_IdChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -837,7 +837,7 @@ namespace Domain
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -859,7 +859,7 @@ namespace Domain
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -884,7 +884,7 @@ namespace Domain
 
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -894,7 +894,7 @@ namespace Domain
     public partial class Speaker : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new Speaker object.
         /// </summary>
@@ -916,7 +916,7 @@ namespace Domain
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -943,7 +943,7 @@ namespace Domain
         private global::System.Int32 _Id;
         partial void OnIdChanging(global::System.Int32 value);
         partial void OnIdChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -967,7 +967,7 @@ namespace Domain
         private global::System.String _Name;
         partial void OnNameChanging(global::System.String value);
         partial void OnNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -991,7 +991,7 @@ namespace Domain
         private global::System.String _Bio;
         partial void OnBioChanging(global::System.String value);
         partial void OnBioChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1015,7 +1015,7 @@ namespace Domain
         private global::System.String _PhotoUrl;
         partial void OnPhotoUrlChanging(global::System.String value);
         partial void OnPhotoUrlChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1041,9 +1041,9 @@ namespace Domain
         partial void OnAgenda_IdChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1081,7 +1081,7 @@ namespace Domain
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1108,5 +1108,5 @@ namespace Domain
     }
 
     #endregion
-    
+
 }

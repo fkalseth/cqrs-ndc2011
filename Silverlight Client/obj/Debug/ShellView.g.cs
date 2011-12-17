@@ -31,14 +31,14 @@ using System.Windows.Threading;
 
 
 namespace Silverlight_Client {
-    
-    
+
+
     public partial class ShellView : System.Windows.Controls.UserControl {
-        
+
         internal System.Windows.Controls.ContentControl ActiveItem;
-        
+
         private bool _contentLoaded;
-        
+
         /// <summary>
         /// InitializeComponent
         /// </summary>

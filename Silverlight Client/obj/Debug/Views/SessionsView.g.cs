@@ -32,16 +32,16 @@ using System.Windows.Threading;
 
 
 namespace Silverlight_Client.Views {
-    
-    
+
+
     public partial class SessionsView : System.Windows.Controls.UserControl {
-        
+
         internal Silverlight_Client.Views.ImageUrlConverter ImageUrlConverter;
-        
+
         internal System.Windows.Controls.Grid LayoutRoot;
-        
+
         private bool _contentLoaded;
-        
+
         /// <summary>
         /// InitializeComponent
         /// </summary>
