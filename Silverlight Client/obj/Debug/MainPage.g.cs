@@ -31,14 +31,14 @@ using System.Windows.Threading;
 
 
 namespace Silverlight_Client {
-    
-    
+
+
     public partial class MainPage : System.Windows.Controls.UserControl {
-        
+
         internal System.Windows.Controls.Grid LayoutRoot;
-        
+
         private bool _contentLoaded;
-        
+
         /// <summary>
         /// InitializeComponent
         /// </summary>

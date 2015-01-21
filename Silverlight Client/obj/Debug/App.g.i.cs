@@ -31,12 +31,12 @@ using System.Windows.Threading;
 
 
 namespace Silverlight_Client {
-    
-    
+
+
     public partial class App : System.Windows.Application {
-        
+
         private bool _contentLoaded;
-        
+
         /// <summary>
         /// InitializeComponent
         /// </summary>

@@ -9,14 +9,14 @@ function get-content-path($contentRoot) {
 	if($id -eq ".NETFramework") { $relative = "NET40" }
 	elseif($id -eq "Silverlight" -and $frameworkname.Profile -eq "WindowsPhone") { $relative = "SL40-WP" }
 	elseif($id -eq "Silverlight" ) { $relative = "SL40" }
- 
+
 	[System.IO.Path]::Combine($contentRoot, $relative)
 }
- 
+
 $contentSource = get-content-path($rootPath + "\tools")
 $defaultNamespace = $project.Properties.Item("DefaultNamespace").Value
 
-ls $contentSource | foreach-object { 
+ls $contentSource | foreach-object {
 	$content = [System.IO.File]::ReadAllText($_.FullName)
 	$content = $content.Replace('$safeprojectname$', $defaultNamespace)
 	$content | out-file $_.FullName

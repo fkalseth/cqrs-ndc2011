@@ -12,7 +12,7 @@
 // Generation date: 06.06.2011 18:42:35
 namespace Silverlight_Client.Services
 {
-    
+
     /// <summary>
     /// There are no comments for ConferenceContext in the schema.
     /// </summary>
@@ -22,7 +22,7 @@ namespace Silverlight_Client.Services
         /// Initialize a new ConferenceContext object.
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public ConferenceContext(global::System.Uri serviceRoot) : 
+        public ConferenceContext(global::System.Uri serviceRoot) :
                 base(serviceRoot)
         {
             this.ResolveName = new global::System.Func<global::System.Type, string>(this.ResolveNameFromType);

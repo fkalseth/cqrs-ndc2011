@@ -16,7 +16,7 @@ namespace Ndc2011.ServiceHost
 
 #endif
 #if SILVERLIGHT
-        
+
             [OperationContract(AsyncPattern = true)]
             IAsyncResult BeginExecute(Command command, AsyncCallback callback, object state);
             CommandResult EndExecute(IAsyncResult ar);

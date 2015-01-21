@@ -7,7 +7,7 @@ namespace Silverlight_Client.Queries
 {
     public class GetAllUpcomingSessionsQuery : DataContextQuery<Session, Session>
     {
-        public GetAllUpcomingSessionsQuery(DataServiceContext context) 
+        public GetAllUpcomingSessionsQuery(DataServiceContext context)
             : base(context)
         {}
 
